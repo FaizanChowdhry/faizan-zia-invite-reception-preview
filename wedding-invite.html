@@ -1641,6 +1641,11 @@
             margin: 0 auto
         }
 
+        .schedule-grid:has(> .schedule-card:only-child) {
+            grid-template-columns: minmax(0, 620px);
+            justify-content: center
+        }
+
         .schedule-card {
             padding: 26px 22px;
             border: 1px solid rgba(177, 138, 74, .42);
@@ -1791,7 +1796,7 @@
                         <div class="letter-inner">
                             <div class="eyebrow">You are invited</div>
                             <h2>Faizan <span>&amp;</span> Zia</h2>
-                            <p>28th November · 7:00 PM</p>
+                            <p>30th November · 7:00 PM</p>
                         </div>
                     </div>
                     <div class="envelope-base"></div>
@@ -1821,14 +1826,14 @@
                     <div class="signature-blessing">With the blessings of Allah, our journey begins</div>
                     <span class="signature-rule"></span>
                 </div>
-                <div class="scratch-card" id="nikah-date">
+                <div class="scratch-card" id="reception-date">
                     <div class="eyebrow">A little reveal</div>
                     <h3>Scratch to reveal</h3>
                     <p>Discover the time remaining until our celebration</p>
                     <div class="scratch-wrap" id="scratchWrap">
-                        <div class="scratch-date-label">SCRATCH TO REVEAL THE NIKAH DATE 💍</div>
+                        <div class="scratch-date-label">SCRATCH TO REVEAL THE DAWAT-E-WALIMA DATE 💍</div>
                         <div class="heart-scratch-row">
-                            <div class="heart-scratch"><strong>28TH</strong><canvas data-heart-scratch></canvas></div>
+                            <div class="heart-scratch"><strong>30TH</strong><canvas data-heart-scratch></canvas></div>
                             <div class="heart-scratch"><strong>NOV</strong><canvas data-heart-scratch></canvas></div>
                             <div class="heart-scratch"><strong>2026</strong><canvas data-heart-scratch></canvas></div>
                         </div>
@@ -1842,46 +1847,6 @@
                         </div>
                         <canvas class="scratch-canvas" id="scratchCanvas"></canvas>
                         <div class="scratch-label">Scratch gently to reveal</div>
-                    </div>
-                </div>
-                <div class="scratch-card" id="walima-date">
-                    <div class="eyebrow">A little reveal</div>
-                    <h3>Scratch to reveal</h3>
-                    <div class="scratch-wrap event-date-scratch-wrap">
-                        <div class="scratch-date-label">SCRATCH TO REVEAL THE WALIMA DATE</div>
-                        <div class="heart-scratch-row">
-                            <div class="heart-scratch"><strong>30TH</strong><canvas data-event-heart></canvas></div>
-                            <div class="heart-scratch"><strong>NOV</strong><canvas data-event-heart></canvas></div>
-                            <div class="heart-scratch"><strong>2026</strong><canvas data-event-heart></canvas></div>
-                        </div>
-                        <div class="event-date-countdown" data-event-countdown="2026-11-30T19:00:00+05:30">
-                            <div class="timer">
-                                <div class="unit"><strong data-countdown-days>--</strong><span>Days</span></div>
-                                <div class="unit"><strong data-countdown-hours>--</strong><span>Hours</span></div>
-                                <div class="unit"><strong data-countdown-minutes>--</strong><span>Minutes</span></div>
-                                <div class="unit"><strong data-countdown-seconds>--</strong><span>Seconds</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="scratch-card" id="haldi-date">
-                    <div class="eyebrow">A little reveal</div>
-                    <h3>Scratch to reveal</h3>
-                    <div class="scratch-wrap event-date-scratch-wrap">
-                        <div class="scratch-date-label">SCRATCH TO REVEAL GOLDEN BEGINNINGS DATE</div>
-                        <div class="heart-scratch-row">
-                            <div class="heart-scratch"><strong>24TH</strong><canvas data-event-heart></canvas></div>
-                            <div class="heart-scratch"><strong>NOV</strong><canvas data-event-heart></canvas></div>
-                            <div class="heart-scratch"><strong>2026</strong><canvas data-event-heart></canvas></div>
-                        </div>
-                        <div class="event-date-countdown" data-event-countdown="2026-11-24T19:00:00+05:30">
-                            <div class="timer">
-                                <div class="unit"><strong data-countdown-days>--</strong><span>Days</span></div>
-                                <div class="unit"><strong data-countdown-hours>--</strong><span>Hours</span></div>
-                                <div class="unit"><strong data-countdown-minutes>--</strong><span>Minutes</span></div>
-                                <div class="unit"><strong data-countdown-seconds>--</strong><span>Seconds</span></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -1905,27 +1870,9 @@
                 </div>
             </section>
             <section class="schedule" aria-labelledby="schedule-title">
-                <div class="eyebrow">The schedule</div>
-                <h2 id="schedule-title">Three moments, one beautiful beginning</h2>
-                <nav class="event-nav" aria-label="Event schedule">
-                    <a href="#nikah-date">Nikah</a>
-                    <a href="#walima-date">Dawat-E-Walima</a>
-                    <a href="#haldi-date">Golden Beginnings</a>
-                </nav>
+                <div class="eyebrow">The reception</div>
+                <h2 id="schedule-title">A beautiful evening awaits</h2>
                 <div class="schedule-grid">
-                    <article class="schedule-card">
-                        <div class="eyebrow">28 November 2026 · 7 PM onwards</div>
-                        <h3>Nikah</h3>
-                        <strong>Kohinoor Marriage Lawn</strong>
-                        <p>Kohinoor Marriage Lawn, 4RQQ+332, Veera Desai Rd,<br>Mhada Colony, Prathmesh Complex, Andheri
-                            West,<br>Mumbai, Maharashtra 400053</p>
-                        <div class="schedule-actions">
-                            <a class="button" target="_blank" rel="noopener"
-                                href="https://www.google.com/maps/dir/?api=1&amp;destination=Kohinoor%20Marriage%20Lawn%2C%204RQQ%2B332%2C%20Veera%20Desai%20Rd%2C%20Mhada%20Colony%2C%20Prathmesh%20Complex%2C%20Andheri%20West%2C%20Mumbai%2C%20Maharashtra%20400053">Get
-                                directions</a>
-                            <button class="button alt" id="share-nikah" type="button">Share invitation</button>
-                        </div>
-                    </article>
                     <article class="schedule-card">
                         <div class="eyebrow">30 November 2026 · 7 PM onwards</div>
                         <h3>Dawat-e-Walima</h3>
@@ -1939,26 +1886,12 @@
                             <button class="button alt" id="share-walima" type="button">Share invitation</button>
                         </div>
                     </article>
-                    <article class="schedule-card">
-                        <div class="eyebrow">24 November 2026 · 7 PM onwards</div>
-                        <h3>Golden Beginnings</h3>
-                        <strong>Khatri Jamat Hall</strong>
-                        <p>Khatri Jamat Hall, 162, Bapu Kothe St,<br>Marine Lines East, Jamli Mohalla,
-                            Panjarpole,<br>Kalbadevi, Mumbai, Maharashtra 400003</p>
-                        <div class="schedule-actions">
-                            <a class="button" target="_blank" rel="noopener"
-                                href="https://www.google.com/maps/dir/?api=1&amp;destination=Khatri%20Jamat%20Hall%2C%20162%2C%20Bapu%20Kothe%20St%2C%20Marine%20Lines%20East%2C%20Jamli%20Mohalla%2C%20Panjarpole%2C%20Kalbadevi%2C%20Mumbai%2C%20Maharashtra%20400003">Get
-                                directions</a>
-                            <button class="button alt" id="share-haldi" type="button">Share invitation</button>
-                        </div>
-                    </article>
                 </div>
             </section>
             <section class="section event">
                 <div class="eyebrow">The celebration</div>
                 <h2>Join us for<br>an evening of joy</h2>
-                <p class="celebration-note">Come celebrate all three beautiful occasions with us as two families become
-                    one.
+                <p class="celebration-note">Come celebrate the Dawat-E-Walima with us as two families become one.
                 </p>
                 <div class="gifts">
                     <div class="eyebrow">Gifts</div>
@@ -1996,7 +1929,7 @@
         document.querySelector('#musicToggle').addEventListener('click', () => { if (!inviteMusic) startMusic(); if (!inviteMusic) return; inviteMusic.muted = !inviteMusic.muted; const toggle = document.querySelector('#musicToggle'); toggle.classList.toggle('is-muted', inviteMusic.muted); toggle.textContent = inviteMusic.muted ? '🔇' : '🔊'; toggle.setAttribute('aria-label', inviteMusic.muted ? 'Turn music on' : 'Mute music'); toggle.title = inviteMusic.muted ? 'Turn music on' : 'Mute music'; });
         function openInvite() { startMusic(); if (page.classList.contains('open-page')) return; envelope.classList.add('opened'); setTimeout(() => { page.classList.add('open-page'); setTimeout(() => { document.querySelector('#content').scrollIntoView({ behavior: 'smooth' }); setTimeout(resizeCanvas, 100); setTimeout(resizeCanvas, 500); }, 10000); }, 1000) }
         envelope.addEventListener('pointerdown', startMusic, { passive: true }); envelope.addEventListener('click', openInvite); envelope.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { startMusic(); openInvite() } });
-        const target = new Date('2026-11-28T19:00:00+05:30').getTime(); let countdownStarted = false; function updateCountdown() { if (!countdownStarted) return; let distance = Math.max(0, target - Date.now()); const day = Math.floor(distance / 86400000); distance %= 86400000; const hour = Math.floor(distance / 3600000); distance %= 3600000; const minute = Math.floor(distance / 60000); const second = Math.floor(distance / 1000) % 60; document.querySelector('#days').textContent = String(day).padStart(2, '0'); document.querySelector('#hours').textContent = String(hour).padStart(2, '0'); document.querySelector('#minutes').textContent = String(minute).padStart(2, '0'); document.querySelector('#seconds').textContent = String(second).padStart(2, '0') } function startCountdown() { if (countdownStarted) return; countdownStarted = true; document.querySelector('.countdown-timer').classList.add('is-started'); updateCountdown(); } setInterval(updateCountdown, 1000);
+        const target = new Date('2026-11-30T19:00:00+05:30').getTime(); let countdownStarted = false; function updateCountdown() { if (!countdownStarted) return; let distance = Math.max(0, target - Date.now()); const day = Math.floor(distance / 86400000); distance %= 86400000; const hour = Math.floor(distance / 3600000); distance %= 3600000; const minute = Math.floor(distance / 60000); const second = Math.floor(distance / 1000) % 60; document.querySelector('#days').textContent = String(day).padStart(2, '0'); document.querySelector('#hours').textContent = String(hour).padStart(2, '0'); document.querySelector('#minutes').textContent = String(minute).padStart(2, '0'); document.querySelector('#seconds').textContent = String(second).padStart(2, '0') } function startCountdown() { if (countdownStarted) return; countdownStarted = true; document.querySelector('.countdown-timer').classList.add('is-started'); updateCountdown(); } setInterval(updateCountdown, 1000);
         function updateEventCountdowns() { document.querySelectorAll('[data-event-countdown]').forEach(countdown => { let distance = Math.max(0, new Date(countdown.dataset.eventCountdown).getTime() - Date.now()); const days = Math.floor(distance / 86400000); distance %= 86400000; const hours = Math.floor(distance / 3600000); distance %= 3600000; const minutes = Math.floor(distance / 60000); const seconds = Math.floor(distance / 1000) % 60; countdown.querySelector('[data-countdown-days]').textContent = String(days).padStart(2, '0'); countdown.querySelector('[data-countdown-hours]').textContent = String(hours).padStart(2, '0'); countdown.querySelector('[data-countdown-minutes]').textContent = String(minutes).padStart(2, '0'); countdown.querySelector('[data-countdown-seconds]').textContent = String(seconds).padStart(2, '0'); }); } updateEventCountdowns(); setInterval(updateEventCountdowns, 1000);
         const canvas = document.querySelector('#scratchCanvas'); const context = canvas.getContext('2d', { willReadFrequently: true }); const scratchWrap = document.querySelector('#scratchWrap'); const RSVP_EMAIL = 'chowdhary.faizan60@gmail.com'; const RSVP_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwrlz7Z9_p8W5UzZPd3PDTCweOCTBGW4wPG6fGBmL-dlXc_yHly8PFy_qBJp5RhsKMACg/exec'; let drawing = false; let scratched = 0; function resizeCanvas() { const width = scratchWrap.offsetWidth || scratchWrap.clientWidth || 300; const height = scratchWrap.offsetHeight || scratchWrap.clientHeight || 150; canvas.width = width; canvas.height = height; canvas.style.width = width + 'px'; canvas.style.height = height + 'px'; context.setTransform(1, 0, 0, 1, 0, 0); context.clearRect(0, 0, canvas.width, canvas.height); context.fillStyle = 'rgba(173, 138, 92, 0.96)'; context.fillRect(0, 0, canvas.width, canvas.height); context.fillStyle = '#f5e7c8'; context.font = '600 11px Montserrat'; context.textAlign = 'center'; context.fillText('✦  SCRATCH HERE  ✦', canvas.width / 2, canvas.height / 2 + 4); }
         function revealScratchStatus() { const data = context.getImageData(0, 0, canvas.width, canvas.height).data; let transparentPixels = 0; for (let index = 3; index < data.length; index += 4) { if (data[index] < 40) transparentPixels += 1 } const revealRatio = transparentPixels / (canvas.width * canvas.height); if (revealRatio > 0.12) scratchWrap.classList.add('scratched'); }
@@ -2031,9 +1964,7 @@
         document.querySelectorAll('.event-date-scratch-wrap').forEach(wrap => { const observer = new MutationObserver(() => { const hearts = [...wrap.querySelectorAll('[data-event-heart]')]; if (hearts.length && hearts.every(heart => heart.parentElement.classList.contains('revealed'))) { wrap.classList.add('event-date-complete'); observer.disconnect(); } }); observer.observe(wrap, { subtree: true, attributes: true, attributeFilter: ['class'] }); });
         document.querySelectorAll('[data-event-heart]').forEach(heartCanvas => { const checkComplete = () => { const wrap = heartCanvas.closest('.event-date-scratch-wrap'); if (!wrap) return; const hearts = [...wrap.querySelectorAll('[data-event-heart]')]; if (hearts.length && hearts.every(heart => heart.parentElement.classList.contains('revealed'))) wrap.classList.add('event-date-complete'); };['pointerup', 'mouseup', 'touchend'].forEach(type => heartCanvas.addEventListener(type, () => setTimeout(checkComplete, 0))); });
         const invitationUrl = 'https://faizanchowdhry.github.io/faizan-zia-invite/wedding-invite.html'; const shareOnWhatsApp = message => window.open(`https://wa.me/?text=${encodeURIComponent(`${message}\n\n${invitationUrl}`)}`, '_blank', 'noopener');
-        document.querySelector('#share-nikah').addEventListener('click', () => shareOnWhatsApp('Join us for the Nikah on 28th November from 7 PM at Kohinoor Marriage Lawn, 4RQQ+332, Veera Desai Rd, Mhada Colony, Prathmesh Complex, Andheri West, Mumbai, Maharashtra 400053.'));
         document.querySelector('#share-walima').addEventListener('click', () => shareOnWhatsApp('Join us for the Dawat-e-Walima on 30th November at Sir Elly Kadoorie School and Junior College, XR8Q+HM5, Shivdas Champsi Rd, Opposite Chaitya Temple, Tadwadi, Mazgaon, Mumbai, Maharashtra 400010.'));
-        document.querySelector('#share-haldi').addEventListener('click', () => shareOnWhatsApp("Join us for Golden Beginnings on 24th November 2026 from 7 PM onwards at Khatri Jamat Hall, 162, Bapu Kothe St, Marine Lines East, Jamli Mohalla, Panjarpole, Kalbadevi, Mumbai, Maharashtra 400003."));
         const rsvpForm = document.querySelector('#rsvp');
         function showerPetals() { if (document.body.dataset.petals) return; document.body.dataset.petals = 'done'; for (let index = 0; index < 150; index++) { const petal = document.createElement('span'); const heart = index % 5 === 0; petal.className = heart ? 'petal heart' : 'petal'; petal.textContent = heart ? '♥' : index % 3 === 0 ? '✿' : '❀'; petal.style.left = Math.random() * 100 + 'vw'; petal.style.setProperty('--drift', (Math.random() * 260 - 130) + 'px'); petal.style.setProperty('--fall', (18 + Math.random() * 8) + 's'); petal.style.animationDelay = (Math.random() * 6) + 's'; petal.style.fontSize = (12 + Math.random() * 13) + 'px'; document.body.appendChild(petal); setTimeout(() => petal.remove(), 32000) } }
         envelope.addEventListener('click', showerPetals);
@@ -2066,12 +1997,12 @@
         });
     </script>
     <script>
-        document.querySelector('.letter .eyebrow').textContent = 'You are invited to our Nikah & Dawat-E-Walima & Haldi ceremony';
+        document.querySelector('.letter .eyebrow').textContent = 'You are invited to our Dawat-E-Walima';
         document.querySelector('.letter h2').innerHTML = 'Faizan Chowdhry <span>&amp;</span> Zia Sayed';
     </script>
     <script>
         const gateway = document.querySelector('#envelope');
-        gateway.innerHTML = '<div class="jannah-gate"><div class="gate-caption">Tap to open the doors</div><img class="gate-lock-logo" src="assets/WhatsApp%20Image%202026-09-19%20at%203.36.58%20PM.jpeg" alt="Open the invitation"><div class="gate-frame"></div><div class="gate-open-card"><div class="gate-open-inner"><div class="eyebrow">You are invited to our Nikah &amp; Reception</div><h2>Faizan Chowdhry <span>&amp;</span> Zia Sayed</h2></div></div><div class="gate-doors"><div class="gate-door gate-left"><span class="gate-handle"></span></div><div class="gate-door gate-right"><span class="gate-handle"></span></div></div></div><div class="tap">Tap the golden doors to enter</div>';
+        gateway.innerHTML = '<div class="jannah-gate"><div class="gate-caption">Tap to open the doors</div><img class="gate-lock-logo" src="assets/WhatsApp%20Image%202026-09-19%20at%203.36.58%20PM.jpeg" alt="Open the invitation"><div class="gate-frame"></div><div class="gate-open-card"><div class="gate-open-inner"><div class="eyebrow">You are invited to our Dawat-E-Walima</div><h2>Faizan Chowdhry <span>&amp;</span> Zia Sayed</h2></div></div><div class="gate-doors"><div class="gate-door gate-left"><span class="gate-handle"></span></div><div class="gate-door gate-right"><span class="gate-handle"></span></div></div></div><div class="tap">Tap the golden doors to enter</div>';
     </script>
     <style>
         .page {
@@ -3726,7 +3657,7 @@
     </style>
     <script>
         const finalGateway = document.querySelector('#envelope');
-        finalGateway.innerHTML = '<div class="envelope-gate"><img class="envelope-cover" src="assets/WhatsApp%20Image%202026-09-19%20at%205.02.13%20PM.jpeg" alt="Open the wedding invitation"><div class="gate-open-card"><div class="gate-open-inner"><div class="eyebrow">You are invited to our Nikah &amp; Dawat-E-Walima &amp; Haldi ceremony</div><h2>Faizan Chowdhry <span>&amp;</span> Zia Sayed</h2></div></div></div>';
+        finalGateway.innerHTML = '<div class="envelope-gate"><img class="envelope-cover" src="assets/WhatsApp%20Image%202026-09-19%20at%205.02.13%20PM.jpeg" alt="Open the wedding invitation"><div class="gate-open-card"><div class="gate-open-inner"><div class="eyebrow">You are invited to our Dawat-E-Walima</div><h2>Faizan Chowdhry <span>&amp;</span> Zia Sayed</h2></div></div></div>';
         finalGateway.addEventListener('click', openInvite);
 
         const sparkleLayer = document.createElement('div'); sparkleLayer.className = 'sparkle-layer';
